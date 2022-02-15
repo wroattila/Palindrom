@@ -8,12 +8,12 @@ public class Palindrom {
 
 	public static void main(String[] args) {
 		
-	    StringBuilder input = new StringBuilder();
+	    
 	    System.out.println("Enter your word");
 	    Scanner scanner = new Scanner(System.in);
 	    String userWord = scanner.nextLine();
-	    input.append(userWord);
-	    input.reverse();
+	    StringBuilder input = new StringBuilder();
+	    reverseString(userWord, input);
 	    
 	    scanner.close();
 	    
@@ -21,6 +21,11 @@ public class Palindrom {
 
 	
 	
+	}
+
+	private static void reverseString(String userWord, StringBuilder input) {
+		input.append(userWord);
+	    input.reverse();
 	}
 
 	private static void palindromValidation(StringBuilder input, String userWord) {
