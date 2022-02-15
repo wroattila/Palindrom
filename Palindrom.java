@@ -17,13 +17,19 @@ public class Palindrom {
 	    
 	    scanner.close();
 	    
-	    if (userWord.equals(input.toString())) {
-	    	System.out.println("The word typed by You is palindrom");
-	    }
-	    else System.out.println(input);
+	    palindromValidation(input, userWord);
 
 	
 	
+	}
+
+	private static void palindromValidation(StringBuilder input, String userWord) {
+		if (userWord.equals(input.toString())) {
+	    	System.out.println("The word typed by You is palindrom");
+	    }
+	    else System.out.println(input); {
+	    	
+	    }
 	}
 
 }
