@@ -6,10 +6,12 @@ public class Palindrom {
 
 	
 
+	private static final String USER_WORD = "Enter your word";
+
 	public static void main(String[] args) {
 		
 	    
-	    System.out.println("Enter your word");
+	    System.out.println(USER_WORD);
 	    Scanner scanner = new Scanner(System.in);
 	    String userWord = scanner.nextLine();
 	    StringBuilder input = new StringBuilder();
